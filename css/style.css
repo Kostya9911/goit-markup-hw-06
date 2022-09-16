@@ -18,6 +18,7 @@ ul {
   --link-cl-txt: #2196f3;
   --ligt-cl-txt: #ffffff;
   --tx-col-11: #000;
+  --tx-col-12: rgba(255, 255, 255, 0.6);
 
   /* Колір фону */
   --main-bcg-cl: #2f303a;
@@ -149,8 +150,6 @@ img {
   background-color: #2196f3;
   bottom: -1.5%;
   left: 0;
-
-  /* transform: translateX(-100%); */
 
   opacity: 0;
   transition: opacity var(--time-anime) var(--cubic-biz-1);
@@ -468,7 +467,7 @@ img {
 }
 
 .link-adr-footer {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--tx-col-12);
 }
 
 .footer-container {
@@ -476,16 +475,20 @@ img {
   align-items: baseline;
 }
 
-.footer-div-1 {
+.footer-cont-address {
   margin-right: 70px;
 }
+.footer-cont-sociallink {
+  margin-right: 93px;
+}
 
-.footer-div-2 a {
+.footer-cont-sociallink a {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--ligt-cl-txt);
 }
 
-.footer-div-2 h2 {
+.footer-cont-sociallink h2,
+.footer-div-subscribe h2 {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -513,6 +516,78 @@ img {
 
 .item-link-addr:not(:last-child) {
   margin-bottom: 9px;
+}
+
+/* Єлемнт підпишись на розсилку */
+
+.footer-div-subscribe input {
+  margin-right: 12px;
+}
+.btn-subscribe {
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--link-cl-txt);
+
+  font-weight: 700;
+  border: none;
+
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--ligt-cl-txt);
+
+  cursor: pointer;
+
+  transition: background-color var(--time-anime) var(--cubic-biz-1);
+}
+
+.list-subscribe {
+  display: flex;
+}
+
+.footer-div-subscribe input::placeholder {
+  color: var(--tx-col-12);
+}
+
+.footer-div-subscribe input {
+  width: 358px;
+  height: 50px;
+
+  padding-left: 16px;
+
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-div-subscribe input:focus {
+  outline: 1px solid var(--link-cl-txt);
+}
+
+.item-subscribe {
+  position: relative;
+}
+.ico-subscribe {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: var(--ligt-cl-txt);
+  cursor: pointer;
+}
+
+.item-subscribe:hover .btn-subscribe,
+.item-subscribe:focus .btn-subscribe {
+  background-color: var(--col-bcg-11);
 }
 
 /* Стилізація сторінки - Портфоліо */
