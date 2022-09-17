@@ -523,6 +523,8 @@ img {
 .footer-div-subscribe input {
   margin-right: 12px;
   outline: transparent;
+  font-weight: 400;
+  font-size: 16px;
 }
 .btn-subscribe {
   position: relative;
@@ -555,6 +557,8 @@ img {
 
 .footer-div-subscribe input::placeholder {
   color: var(--tx-col-12);
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .footer-div-subscribe input {
