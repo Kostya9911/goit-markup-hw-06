@@ -488,7 +488,8 @@ img {
 }
 
 .footer-cont-sociallink h2,
-.footer-div-subscribe h2 {
+.footer-div-subscribe strong {
+  display: block;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -521,10 +522,12 @@ img {
 /* Елемент підпишись на розсилку */
 
 .footer-div-subscribe input {
-  margin-right: 12px;
   outline: transparent;
   font-weight: 400;
   font-size: 16px;
+}
+.footer-div-subscribe label {
+  margin-right: 12px;
 }
 .btn-subscribe {
   position: relative;
